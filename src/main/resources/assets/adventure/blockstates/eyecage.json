@@ -1,0 +1,41 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"textures": {
+			"texture": "adventure:blocks/eyecage"
+    	}
+	},
+	"variants": {
+		"inventory": [{
+			"transform": "forge:default-block",
+			"model": "adventure:eyecagebase",
+			"submodel": {
+				"cube": {
+					"model": "adventure:eyecage"
+				}
+			}
+		}],
+		"facing": {
+			"down": {"transform": "identity"},
+			"up": {"transform": "identity"},
+			"north": {"transform": "identity"},
+			"south": {"transform": "identity"},
+			"west": {"transform": "identity"},
+			"east": {"transform": "identity"}
+		},
+		"static": {
+			"true": {
+				"model": "adventure:eyecagebase"
+			},
+			"false": {
+				"model": "adventure:eyecage"
+			}
+		},
+		"entity": [{
+			"model": "adventure:eyecagebase",
+			"submodel": {
+				"cube": {"model": "advenutre:eyecage"} 
+			}
+		}]
+	}
+}
